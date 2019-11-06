@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Lost Items</h1>
+    <div class="row">
+        {% for product in products %}
+         <div class="col" style = "flex-grow: 0;">
+            <div class="card" style="width: 18rem; margin-left: 1em; margin-top: 1em;">
+                <img src="{{ product.image_url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.description }}</p>
+                    <b class="card-text">{{ product.availability }}</b><br><br>
+                    <a href="http://127.0.0.1:8000/admin/products/product/{{product.id}}/delete" class="btn btn-primary">Return as Found</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}
