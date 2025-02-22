@@ -1,5 +1,5 @@
 # Find-it-Quick-and-Easy
-Lost and Found website made using Django
+Lost and Found website made using Django in Python
 
 Copy and paste this folder into your desktop, open command prompt (windows key + x) and type the following:
 
